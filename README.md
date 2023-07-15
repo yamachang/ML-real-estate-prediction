@@ -57,5 +57,7 @@ Next, we aimed to perform data cleaning tasks, which involved **grouping sparse 
 
 ## 🧵 Predicting House Prices using Regression Models
 
+![Plot 7](plots/model-metrics.png)
+
 ## 📍 Takeaways and Next Steps
 
