@@ -24,7 +24,34 @@ The REIT engaged my services as a data science consultant, presenting me with th
 
 Initiate the process by establishing an appropriate environment for running a Jupyter Notebook file, making certain that you have the right versions of all required libraries. Following this, proceed to download the data and the .ipynb file. Load the necessary libraries and data in the notebook. Finally, execute the entire notebook by selecting "Run All".
 
-## 🎨 Exploratory Data Analysis
+## 🎨 Exploratory Data Analysis & Data Cleaning
+
+### Summary Statistics
+
+We did some preliminary analysis and visualizations in order to better understand our data. Below you can see some of those results:
+
+First, we created **histograms** to get to know about the **distributions** and to eye detect if there's any sparse data.
+
+![Plot 1](plots/histogram.png)
+
+Next, we used **box plot** to check the relationship between categorical features and numeric features. In general, it looks like single family homes are more expensive than apartments.
+
+![Plot 2](plots/boxplot.png)
+
+In order to examine the relationship between numeric features and other numeric features, we visualized the **correlation matrix**!
+
+![Plot 3](plots/heatmap.png)
+
+Next, we aimed to perform data cleaning tasks, which involved **grouping sparse data** to mitigate overfitting and **checking for outliers**. 
+
+* **Grouping sparse data**: For categorical features, we reduced the number of items in `exterior_walls` from 16 to 8, and in `roof` from 16 to 5.
+
+![Plot 4](plots/bar-plot-walls.png) 
+![Plot 5](plots/bar-plot-roof.png)
+
+* **Checking for outliers**: It looks like `lot_size` has a potential outlier as it has a long and skinny tail, and we decided to remove observations with `lot_size` greater than 500,000 sqft for outliers.
+
+![Plot 6](plots/violin-plot-lotsize.png) 
 
 ## 🧵 Predicting House Prices using Regression Models
 
