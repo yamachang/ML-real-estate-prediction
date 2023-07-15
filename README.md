@@ -24,7 +24,9 @@ The REIT engaged my services as a data science consultant, presenting me with th
 
 Initiate the process by establishing an appropriate environment for running a Jupyter Notebook file, making certain that you have the right versions of all required libraries. Following this, proceed to download the data and the .ipynb file. Load the necessary libraries and data in the notebook. Finally, execute the entire notebook by selecting "Run All".
 
-## 🎨 Exploratory Data Analysis & Data Cleaning
+## 🎨 Exploratory Data Analysis / Data Cleaning / Feature Engineering
+
+We first cleaned the data, conducted exploratory data analysis and feature engineering using the [Real Estate Prediction - Data Cleaning, Exploratory Analysis, & Feature Engineering.ipynb](https://github.com/yamachang/ML-real-estate-prediction/blob/main/Real%20Estate%20Prediction%20-%20Data%20Cleaning%2C%20Exploratory%20Analysis%2C%20%26%20Feature%20Engineering.ipynb). During data cleaning and exploratory data analysis, we utilized various plots to assess distributions, segmentations, correlations, and outliers. Subsequently, we performed the following tasks: dropping unwanted observations, rectifying structural errors, eliminating outliers, and addressing missing data. In terms of feature engineering, we generated new features, grouped sparse classes, and created dummy variables for categorical features.
 
 ### Summary Statistics
 
