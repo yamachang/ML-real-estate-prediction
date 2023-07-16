@@ -31,27 +31,37 @@ I performed data cleaning, exploratory data analysis, and feature engineering us
 **Preliminary analysis and visualizations were conducted to gain insights into the data. Here are some of the key findings:**
 
 * **Histograms** were used to understand the distribution of variables and identify any sparse data.
-
-![Plot 1](plots/histogram.png)
+  
+<p align="center">
+  <img src="plots/histogram.png" alt="Plot 1" style="width:800px;height:800px;">
+</p>
 
 * **Box plots** were employed to examine the relationship between categorical and numeric features. In general, it looks like single family homes are more expensive than apartments.
 
-![Plot 2](plots/boxplot.png)
+<p align="center">
+  <img src="plots/boxplot.png" alt="Plot 2" style="width:600px;height:350px;">
+</p>
   
 * **The correlation matrix** was visualized to explore the relationships between numeric features.
 
-![Plot 3](plots/heatmap.png)
+<p align="center">
+  <img src="plots/heatmap.png" alt="Plot 3" style="width:850px;height:750px;">
+</p>
 
 **Next, we aimed to perform data cleaning tasks, which involved **grouping sparse data** to mitigate overfitting and **checking for outliers**.**
 
 * **Grouping sparse data**: For categorical features, we reduced the number of items in `exterior_walls` from 16 to 8, and in `roof` from 16 to 5.
 
-![Plot 4](plots/bar-plot-walls.png) 
-![Plot 5](plots/bar-plot-roof.png)
+<div style="display:flex; justify-content:center;">
+  <img src="plots/bar-plot-walls.png" alt="Plot 4" style="width:500px;height:350px; margin-right: 10px;">
+  <img src="plots/bar-plot-roof.png" alt="Plot 5" style="width:500px;height:350px; margin-left: 10px;">
+</div>
 
 * **Checking for outliers**: It looks like `lot_size` has a potential outlier as it has a long and skinny tail, and we decided to remove observations with `lot_size` greater than 500,000 sqft for outliers.
 
-![Plot 6](plots/violin-plot-lotsize.png) 
+<p align="center">
+  <img src="plots/violin-plot-lotsize.png" alt="Plot 6" style="width:500px;height:400px;">
+</p>
 
 ## 🧵 Predicting House Prices using Regression Models
 
@@ -65,13 +75,17 @@ Next, hyperparameters for each model were tuned accordingly before fitting the t
 
 The evaluation of the models is shown in the plot below:
 
-![Plot 7](plots/model-metrics.png)
+<p align="left">
+  <img src="plots/model-metrics.png" alt="Plot 7" style="width:300px;height:250px;">
+</p>
 
 Analyzing the metrics, we observed that Random Forest achieved the highest R2 score and the lowest MAE. While Gradient Boosting Tree showed the best holdout R2 score during cross-validation, Random Forest's performance was only slightly lower. Importantly, Random Forest met the win condition of the project with an MAE below $70,000.
 
 In conclusion, let's visualize the performance of the winning model on the test set.
 
-![Plot 8](plots/performance.png)
+<p align="left">
+  <img src="plots/performance.png" alt="Plot 8" style="width:500px;height:400px;">
+</p>
 
 ## 📍 Takeaways and Next Steps
 
@@ -85,9 +99,9 @@ The ML-real-estate-prediction project aimed to develop a model to predict transa
 
 *Business Perspective:*
 
-Improved Pricing Strategy: Accurate predictions optimize pricing decisions, maximizing profits and competitiveness.
-Risk Mitigation: Accurate estimates aid in informed investment decisions, minimizing overpaying or undervaluing properties.
-Cost Reduction: Accurate predictions reduce the need for costly manual appraisals, streamlining operations.
+* Improved Pricing Strategy: Accurate predictions optimize pricing decisions, maximizing profits and competitiveness.
+* Risk Mitigation: Accurate estimates aid in informed investment decisions, minimizing overpaying or undervaluing properties.
+* Cost Reduction: Accurate predictions reduce the need for costly manual appraisals, streamlining operations.
 
 *Next Steps:*
 
