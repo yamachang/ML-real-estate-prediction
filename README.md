@@ -1,5 +1,9 @@
 # 🏡 ML-real-estate-prediction
 
+<p align="center">
+  <img src="residuals_rf_model.png" alt="Cover Plot" style="width:800px;height:550px;">
+</p>
+
 ```
 Can we build a model to better predict transaction prices of real estate prices?
 ```
